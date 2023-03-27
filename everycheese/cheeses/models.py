@@ -18,6 +18,6 @@ class Firmness(models.TextChoices):
     SEMI_SOFT = "semi-soft", "Semi-Soft"
     SEMI_HARD = "semi-hard", "Semi-hard"
     HARD = "hard", "Hard"
-
-firmness = models.CharField("Firmness", max_length=20, choices=Firmness.choices, default=Firmness.UNSPECIFIED)
+    
+    firmness = models.CharField("Firmness", max_length=20, choices=Firmness.choices, default=Firmness.UNSPECIFIED)
 
