@@ -6,7 +6,7 @@ from ..models import Cheese
 
 pytestmark = pytest.mark.django_db
 
-def test___str__():
+def test__str__():
     cheese = Cheese.objects.create(
         name="Stracchino",
         description="Semi-sweet cheese that goes well with starches.",
